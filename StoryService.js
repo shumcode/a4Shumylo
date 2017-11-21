@@ -3,7 +3,8 @@
     var wordStory = {};
     return {
       setWords: setWords,
-      getWords: getWords
+      getWords: getWords,
+      wordStory: wordStory
     };
     function setWords(newInfo) {
       wordStory = newInfo;
@@ -12,6 +13,9 @@
     function getWords () {
       return wordStory;
     }
+    // function removeWords() {
+    //   wordStory = {};
+    // }
   }
 
 
