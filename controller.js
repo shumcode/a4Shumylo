@@ -8,10 +8,9 @@
   function StoryController (StoryService) {
     var vm = this;
     vm.wordStory = StoryService.getWords();
-    // vm.restartStory = function (newInfo) {
-    //   StoryService.removeWords(newInfo);
-    //   console.log("hello");
-    // }
+    vm.restartStory = function() {
+      StoryService.removeWords();
+    }
   }
 
   angular

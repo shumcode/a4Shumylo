@@ -4,18 +4,18 @@
     return {
       setWords: setWords,
       getWords: getWords,
-      wordStory: wordStory
+      removeWords: removeWords
     };
     function setWords(newInfo) {
       wordStory = newInfo;
       $location.path("/story");
     }
-    function getWords () {
+    function getWords() {
       return wordStory;
     }
-    // function removeWords() {
-    //   wordStory = {};
-    // }
+    function removeWords() {
+      wordStory = {};
+    }
   }
 
 

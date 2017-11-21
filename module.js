@@ -19,6 +19,3 @@
   });
 })();
 
-
-// ng-click="form.changeInfo(form.info);"
-
